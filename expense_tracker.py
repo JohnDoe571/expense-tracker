@@ -1,3 +1,9 @@
+def show_expenses(expenses):
+    print("\nYour expenses: ")
+
+    for name, amount in expenses:
+        print(f"{name}: {amount:.2f}")
+
 expenses = []
 
 while True:
@@ -7,10 +13,8 @@ while True:
 
     amount = float(input("Amount: "))
     expenses.append((name, amount))
-print("\nYour expenses: ")
 
-for name, amount in expenses:
-    print(f"{name}: €{amount:.2f}")
+show_expenses(expenses)
 
 total = sum(amount for name, amount in expenses)
 
