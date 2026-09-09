@@ -16,6 +16,7 @@ while True:
 
 show_expenses(expenses)
 
+print(f"\nNumber of expenses: {len(expenses)}")
 total = sum(amount for name, amount in expenses)
 
 print(f"\nTotal spent: €{total:.2f}")
