@@ -18,4 +18,4 @@ show_expenses(expenses)
 
 total = sum(amount for name, amount in expenses)
 
-print(f"\nTotal: €{total:.2f}")
+print(f"\nTotal spent: €{total:.2f}")
