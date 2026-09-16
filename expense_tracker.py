@@ -17,6 +17,7 @@ while True:
 show_expenses(expenses)
 
 print(f"\nNumber of expenses: {len(expenses)}")
+print("Thanks for using the expense tracker")
 total = sum(amount for name, amount in expenses)
 
 print(f"\nTotal spent: €{total:.2f}")
