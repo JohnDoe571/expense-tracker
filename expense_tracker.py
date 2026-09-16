@@ -21,3 +21,7 @@ print("Thanks for using the expense tracker")
 total = sum(amount for name, amount in expenses)
 
 print(f"\nTotal spent: €{total:.2f}")
+
+if expenses:
+    average = sum(amount for _, amount in expenses)/len(expenses)
+    print(f"Average expense: {average:.2f}")
